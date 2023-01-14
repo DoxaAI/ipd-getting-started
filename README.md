@@ -12,13 +12,16 @@ Feel free to fork this repository and use it as the base for implementing your o
     - `submission/doxa.yaml`: this is a configuration file that tells DOXA how to treat your submission
     - `submission/ipd.py`: this is a Python module used to abstract away the logic of communicating with DOXA over `stdio` -- you can safely ignore this file for the most part
     - `submission/run.py`: this is where you should implement your own agent!
+- `1_introduction.ipynb`: this is an introductory Jupyter notebook
+- `2_tabular_q_learning.ipynb`: this is a Jupyter notebook that provides an introduction to tabular Q-learning
+- `3_evaluation.ipynb`: this is a Jupyter notebook that allows you to test the agent `Agent` you implement in `submission/run.py`
 - `engine.py`: this is a local implementation of the iterated prisoner's dilemma game (similar to what is used on DOXA for running the tournament), which you can use for testing your agent locally or even for training based on reinforcement learning.
 
 ## Submitting to DOXA
 
 In order to submit your work to DOXA, you must prepare a folder containing all the files necessary to run your agent, including potentially any trained model and the code required to use it, as well as a `doxa.yaml` file.
 
-If you do not have the DOXA CLI installed, you may install it from [PyPI](https://pypi.org/project/doxa-cli/) using the following command:
+If you do not have the DOXA CLI installed, you may install it from [PyPI](https://pypi.org/project/doxa-cli/) using `pip` as follows:
 
 ```bash
 pip install doxa-cli
